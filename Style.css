@@ -1,0 +1,451 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Noto Sans", Sans-serif;
+}
+
+.Nav-bar{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    /* background: linear-gradient(purple, blue, skyblue, white); */
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-sizing: 0 10px 25px rgba(0,0,0,0,15);
+    border-radius: 0 0 10px 10px;
+    padding: 30px 40px;
+    min-width: 900px;
+}
+/* Show dropdown when hovering the parent nav-item */
+.nav-item:hover .dropdown{
+    display: flex;
+    gap: 60px;
+}
+.dropdown-column{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.dropdown-column a{
+    color: #182b4d;
+    text-decoration: none;
+    font-size: 15px;
+}
+.dropdown-column a:hover{
+    text-decoration: underline;
+}
+.dropdown-column a.heading {
+    font-weight: bold;
+    color: #6b6b6b;
+    font-style: 13px;
+    text-transform: none;
+}
+.dropdown-column a.featured {
+    font-weight:  bold;
+}
+.new-badge{
+    background: #6a5cf5;
+    color: #fff;
+    font-size: 10px;
+}
+
+.dropdown.help-dropdown{
+    min-width: 500px;
+}
+
+.Space{
+   display: flex;
+   justify-content: space-between;
+   gap: 5px;
+   margin-right: 50px;
+   line-height: 10px;
+   position: relative;
+   top: -8px;
+}
+
+/* Sign Up */
+.Sign-up{
+   border-radius: 10px;
+    border: 2px transparent rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.Sign-up :hover{
+   color: white;
+}
+
+.Sign-up a{
+   text-decoration: none;
+}
+
+/* Login */
+.Login{
+    border-radius: 10px;
+    border: 2px transparent rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.Login>a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.Login :hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+
+li>ul>a{
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    gap: 40px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+a{
+   list-style: none;
+   color:white;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 7px;
+   padding-right: 7px;
+   border-radius: 8px;
+}
+
+img{
+    font-size: 10px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.mr{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.mr h1{
+   font-size: 62px;
+   position: relative;
+   top: -64px;
+}
+
+.mr p{
+    position: relative;
+   color: #ebe6fa;
+   font-size: 18px;
+   margin: 0 0 35px;
+   top: -62px;
+}
+
+
+.start-btn{
+    background: #f4f4f4;
+    color: #182b4d;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: -64px;
+}
+
+.All{
+   /* background: linear-gradient(purple, blue, skyblue, white); */
+   background: linear-gradient(#932cff, #5539f5, #4dc2d2, #ebebfe, #f9f6ff);
+}
+
+h1{
+  color:white;
+  text-align: center;
+}
+
+.border{
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 5px 9px #eadddd;
+    line-height: 100px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #f9f9f9;
+    position: relative;
+    top: -320px;
+    /* border: 20px solid black; */
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 200px;
+    margin-top: 2px;
+    padding-left: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    padding-right: 20px;
+}
+
+.John:hover{
+    background-color: rgb(244, 243, 243);
+    border-radius: 200px;
+    padding-bottom: 1px;
+}
+
+.Ben:hover{
+    background-color: rgb(244, 243, 243);;
+}
+
+.Joy:hover{
+    background-color: rgb(244, 243, 243);;
+}
+
+.Abel:hover{
+    background-color: rgb(244, 243, 243);;
+}
+
+.One{
+    background: linear-gradient(#199BD9, #5D32F7);
+    border-radius: 30px;
+    padding-top: 0px;
+    padding-right: 30px;
+    color: white;
+}
+
+.One > img{
+   color: orange;
+}
+
+.Span{
+    color: black;
+    font-size: 46px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background: linear-gradient( #5D32F7, #199BD9); */
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    border-radius: 25px;
+}
+
+ 
+.card{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( #5D32F7, #199BD9);
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.card > h2{
+   margin: 20px;
+   color: white;
+    
+}
+ 
+.card > p{
+    margin: 20px;
+    color: white;
+    line-height: 20px;
+}
+
+.card > button{
+    margin: 20px;
+    color: black;
+    line-height: 20px;
+}
+
+/* .card > img{
+    margin: 20px;
+    color: white;
+    line-height: 20px;
+} */
+
+/* .card1{
+    display: flex;
+    flex-direction:;
+    background: linear-gradient( #FEBE97, #FEB387, #FEB387, #EA7A3A, #FD640D);
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 300px;
+    margin-right: 800px;
+    border-radius: 25px;
+} */
+
+.card1 > h2{
+   margin: 20px;
+   color:black;
+    
+}
+ 
+.card1 > p{
+    margin: 20px;
+    color: black;
+    line-height: 20px;
+}
+
+.Top-Emoji{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -125px;
+}
+
+.Top-Emoji img{
+    width: 170px;
+    height: 170px;
+}
+
+.Bottom-Emoji{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -160px;
+}
+
+.Bottom-Emoji img{
+    width: 170px;
+    height: 170px;
+}
+
+.Borderr{
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+    position: relative;
+    top: -190px;
+}
+
+.Tools{
+    font-size: 56px;
+    text-align: center;
+    font-family: 
+    Canva Sans;
+}
+
+.footer{
+    background: linear-gradient(to right, #08B7D0, #356EE7, #3274E5, #5638F8, #682FF3, #772BEB, #7D2AE8);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Below{
+    font-size: 46px;
+    color: white;
+    text-align: center;
+}
+
+.Below> img{
+    height: 600px;
+    width: 900;
+}
+
+.Below> button{
+    color:black;
+    font-size: 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color:rgb(226, 216, 216);
+}
+
+.Below> button:hover{
+    background-color: white;
+}
+
+
+/* Cards */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item{
+    border-radius: 20px;
+    width: 100%;
+}
+
+#wider{
+    grid-column: span 2;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    height: fit-content;
+    top: 25%;
+}
+
+/* For first card */
+.item>h2{
+    color: white;
+    position: relative;
+    bottom: -20px;
+    left: 20px;
+    
+}
+
+.item>button{
+    position: relative;
+    bottom: -30px;
+    left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    background-color: rgb(244, 233, 233);
+    border: none;
+}   
+
+.item>button:hover{
+    background-color: #ffffff;
+}
+
+.item>img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 800%;
+   height: auto; 
+   display: block;
+   width: 100%;
+   overflow: hidden;
+   height: auto;
+}
+
+/* FOr the first righ card */

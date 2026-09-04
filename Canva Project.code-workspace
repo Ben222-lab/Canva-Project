@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../To my flash Drive/Canva/canvaImages"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Canva Project"
+	}
+}
