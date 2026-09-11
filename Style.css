@@ -16,7 +16,8 @@ body{
     padding: 0px;
     box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
 }
-/* Navbar */
+
+
 .navbar{
     position: relative;
     bottom: -25px;
@@ -25,7 +26,6 @@ body{
     justify-content: space-between;
     padding: 15px 30px;
     flex-wrap: wrap;
-    position: relative;
     z-index: 10;
 }
 .navbar-left{
@@ -77,14 +77,10 @@ img{
     background: #ebe7e7;
     color: #182b4d;
     border: none;
-    padding: 10px 20px;
     border-radius: 8px;
     font-size: 15px;
     cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px
+    padding: 5px 10px;
 }
 
 .login-btn:hover{
@@ -95,14 +91,14 @@ img{
     text-decoration: none;
     color: black;
 }
-/* The dropdown panel */
+
 .dropdown{
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background: #ffffff;
-    box-shadow: 0 10px 25px rgba(0,0,0,0,15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     border-radius: 0 0 10px 10px;
     padding: 30px 40px;
     min-width: 900px;
@@ -127,7 +123,7 @@ img{
 .dropdown-column a.heading {
     font-weight: bold;
     color: #6b6b6b;
-    font-style: 13px;
+    font-size: 13px;
     text-transform: none;
 }
 .dropdown-column a.featured {
@@ -157,11 +153,11 @@ img{
 }
 .second p{
     color: #EBE6FE;
-    font-size: 18px;
+    font-size: 18px; 
     margin: 0 0 35px;
 }
 .start-btn {
-    background: #f4f4f4;
+    background: rgb(237, 233, 233);
     color: #182b4d;
     border: none;
     padding: 8px 32px;
@@ -170,6 +166,11 @@ img{
     font-weight: bold;
     cursor: pointer;
 }
+
+.start-btn:hover{
+    background-color: white;
+}
+
 .icons-row {
     display: flex;
     justify-content: center;
@@ -196,11 +197,11 @@ img{
 }
 .icon-box.circle {border-radius:  50%;}
 
-/* Tools section */
+
 .tools-section{
     text-align: center;
     padding: 80px 20px 60px;
-    background: #fff;
+    background: white;
     position: relative;
     top: -20px;
 }
@@ -235,20 +236,13 @@ img{
     cursor: pointer;
 }
 .pill-active{
-    background: #2c6bed;
+   background: linear-gradient(to right, #12A6D5, #5F32F4);
     color: #ffffff;
 }
 .pill-icon{
     font-size: 18px;
 }
- 
-/* .carousel-item.active p{
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 600;
-    margin: 0 0 20px;
-}
-  */
+
 .explore-btn{
     align-self: flex-start;
     background: #fff;
@@ -260,6 +254,8 @@ img{
     font-weight: 600;
     cursor: pointer;
 }
+
+
 .grid-container{
     border-radius: 22px;
     display: grid;
@@ -268,28 +264,45 @@ img{
     gap: 20px;
     padding: 20px;
 } 
+
 .item{
     border-radius: 20px;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 30px;
 }
+
+
+
+.item button:hover{
+    background-color: white;
+}
+
 .item h2{
     padding-left: 25px;
-    position: relative;
-    bottom: -30px;
     color: white;
+    margin-bottom: 10px;
 }
 
 .item button{
-    padding-left: 25px;
-    position: relative;
-    bottom: -30px;
-    left: 27px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    align-self: flex-start;
     border-radius: 12px;
+    background-color: rgb(249, 248, 248);
 }
 
-.item h2>button{
-    padding-bottom: 200px;
+.item img{
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    object-fit: cover;
+    object-position: bottom center;
 }
+
 
 #wider{
     grid-column:  span 2;
@@ -352,9 +365,17 @@ img{
 }
 .tools img{
     align-self: center;
-    max-width: 400%;
-    height: 500px;
+    max-width: 90%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
 }
+
+.explore-btn:hover{
+    background-color: white;
+}
+
+
 
 .templates-hero{
     text-align: center;
@@ -421,7 +442,7 @@ img{
     grid-column: span 2;
 }
 
-/* Style Bootstrap's built-in arrows to look like the rounded white circles in the reference */
+
 .carousel-control-prev,
 .carousel-control-next{
     width: 44px;
@@ -453,9 +474,9 @@ img{
     justify-self: center;
     font-size: 55px;
     position: relative;
-    top: 49x;
-    
+    top: 49px;
 }
+
 
 .vault{
     border-radius: 22px;
@@ -468,32 +489,49 @@ img{
 .gold{
     border-radius: 20px;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 25px;
 }
 
 .gold p{
     padding-left: 20px;
-    position: relative;
-    top: 25px;
     font-size: 30px;
     color: white;
+    margin-bottom: 10px;
 }
 
 .bank-btn{
-    margin-left: 23px;
-    position: relative;
-    top: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    align-self: flex-start;
     border-radius: 9px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px 20px;
     border: none;
     background-color: #f1eaea;
+    cursor: pointer;
 }
 
 .bank-btn:hover{
     background-color: white;
 }
+
+.btn-secondary:hover{
+    background-color: rgb(248, 245, 245);
+}
+
+
+
+.gold img{
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    object-fit: contain;
+    object-position: bottom center;
+}
+
 .start {
   width: 100%;
   height: 100vh;
@@ -515,6 +553,7 @@ img{
     background-color: #EFEAFE;
     padding: 10px 30px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .button3 > .btn3:hover{
@@ -621,28 +660,22 @@ img{
     background-color: white;
 }
 
-.Ben{
-    position: relative;
-    bottom: -70px;
-    left: -65px;
-    right: -200px;
-    object-fit: cover;
-}
-
 .Black{
     color: black;
     font-size: 28px;
     padding-left: 30px;
-    position: relative;
-    bottom: -20px;
 }
 
-.Correct{
-    position: relative;
-    left: -10px;
+.card{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid transparent;
+    border-radius: 99px;
+    padding: 20px;
+    gap: 20px;
 }
-
-.right{
-    position: relative;
-    left: -95px;
+.card img{
+    border-radius: 9px;
+    width: 20%;
+    height: auto;
 }
